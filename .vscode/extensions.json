@@ -4,4 +4,8 @@
 	"recommendations": [
 		"platformio.platformio-ide"
 	]
+	{ 
+      while(!Update.isFinished()){
+        written = Update.write(clientWiFi);
+        if(written > 0) clientWiFi.print(written, DEC);
 }
